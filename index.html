@@ -186,7 +186,7 @@
 <section id="projects" style="background: var(--bg);">
   <div class="reveal">
     <div class="section-tag">// what i've built</div>
-    <h2 class="section-title">Featured Project</h2>
+    <h2 class="section-title">Projects</h2>
   </div>
   <div class="project-featured reveal">
     <div class="project-content">
@@ -230,7 +230,15 @@
   </div>
 
   <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 12px; overflow: hidden;" class="reveal">
-    <div style="background: var(--bg2); padding: 2.5rem;"><div class="project-badge" style="margin-bottom: 1rem;">Coming soon</div><h3 style="font-family: var(--font-display); font-weight: 700; font-size: 1.2rem; margin-bottom: 0.75rem;">Project 2</h3><p style="font-size: 0.88rem; color: var(--muted); line-height: 1.7;">Next project in progress — stay tuned.</p></div>
+    <div style="background: var(--bg2); padding: 2.5rem; transition: background 0.2s;" onmouseenter="this.style.background='var(--bg3)'" onmouseleave="this.style.background='var(--bg2)'">
+      <div class="project-badge" style="margin-bottom: 1rem;">Agentic AI · Data Governance · LLM</div>
+      <h3 style="font-family: var(--font-display); font-weight: 700; font-size: 1.2rem; margin-bottom: 0.75rem;">🛡️ GuardRail AI Auditor</h3>
+      <p style="font-size: 0.88rem; color: var(--muted); line-height: 1.7; margin-bottom: 1.25rem;">An autonomous agentic AI system that automates data governance auditing and repair using local LLMs (Ollama/Llama3). Scans for PII, type mismatches, and outliers — then executes automated repairs with a human-in-the-loop approval flow.</p>
+      <div class="project-stack" style="margin-bottom: 1.25rem;">
+        <span class="stack-tag">Python</span><span class="stack-tag">Ollama / Llama3</span><span class="stack-tag">LangChain</span><span class="stack-tag">Streamlit</span><span class="stack-tag">Pandas</span>
+      </div>
+      <a href="https://github.com/saikumarmadha-19/GaurdRail-AI-Auditor" class="project-link" target="_blank" style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent); text-decoration: none; letter-spacing: 0.05em; display: inline-flex; align-items: center; gap: 0.4rem;">GitHub →</a>
+    </div>
     <div style="background: var(--bg2); padding: 2.5rem; border-left: 1px solid var(--border);"><div class="project-badge" style="margin-bottom: 1rem;">Coming soon</div><h3 style="font-family: var(--font-display); font-weight: 700; font-size: 1.2rem; margin-bottom: 0.75rem;">Project 3</h3><p style="font-size: 0.88rem; color: var(--muted); line-height: 1.7;">Next project in progress — stay tuned.</p></div>
   </div>
 </section>
@@ -245,7 +253,7 @@
         <div class="about-info-row"><span>loc</span><span>Hyderabad, India</span></div>
         <div class="about-info-row"><span>edu</span><span>B.Sc, 2025</span></div>
         <div class="about-info-row"><span>role</span><span>Data Scientist / ML Engineer</span></div>
-        <div class="about-info-row"><span>mail</span><span>saikumarmadha2004@gmail.com</span></div>
+        <div class="about-info-row"><span>mail</span><span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e89b8981839d85899a85898c8089dad8d8dca88f85898184c68b8785">[email&#160;protected]</a></span></div>
         <div class="about-info-row"><span>status</span><span style="color: var(--accent);">Open to work ●</span></div>
       </div>
     </div>
@@ -271,7 +279,7 @@
     <h2 class="section-title">Get In Touch</h2>
     <p class="contact-sub">I'm actively looking for Data Scientist, ML Engineer, and Data Analyst roles. If you have an opportunity or just want to talk data — reach out!</p>
     <div class="contact-links">
-      <a href="mailto:saikumarmadha2004@gmail.com" class="contact-link">✉ saikumarmadha2004@gmail.com</a>
+      <a href="/cdn-cgi/l/email-protection#1360727a78667e72617e72777b722123232753747e727a7f3d707c7e" class="contact-link">✉ <span class="__cf_email__" data-cfemail="6615070f0d130b07140b07020e075456565226010b070f0a4805090b">[email&#160;protected]</span></a>
       <a href="https://github.com/saikumarmadha-19" class="contact-link" target="_blank">⌥ GitHub</a>
       <a href="https://www.linkedin.com/in/saikumar-madha-74907a348/" class="contact-link" target="_blank">↗ LinkedIn</a>
     </div>
@@ -283,7 +291,7 @@
   <div>Hyderabad, India · Open to work</div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   const cursor = document.getElementById('cursor');
   const ring = document.getElementById('cursorRing');
   let rx = 0, ry = 0;
@@ -298,15 +306,4 @@
   const observer = new IntersectionObserver(entries => {
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
   }, { threshold: 0.1 });
-  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-  function animateRing() {
-    rx += (parseFloat(cursor.style.left || 0) + 4 - 16 - rx) * 0.12;
-    ry += (parseFloat(cursor.style.top || 0) + 4 - 16 - ry) * 0.12;
-    ring.style.left = rx + 'px';
-    ring.style.top = ry + 'px';
-    requestAnimationFrame(animateRing);
-  }
-  animateRing();
-</script>
-</body>
-</html>
+  d
